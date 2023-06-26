@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+    font-family: system-ui;
+  }
+  
+  .banner-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 50%;
+    background-image:url("/images/bg-mobile-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .banner {
+    margin-top: 400px;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 25px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    width: 90%; 
+    max-width: 600px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    position: relative;
+    bottom: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  
+  .content h1 {
+    letter-spacing: 3px;
+    color:  hsl(235, 21%, 11%);
+  }
+  
+  .content img {
+    height: 34px;
+  }
+  .content h1 {
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .todo {
+    width: 100%;
+  }
+  
+  form {
+    min-width: 50%;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  form button {
+    position: relative;
+    font-size: 1rem;
+    top: 33px;
+    width: 100%; 
+    max-width: 90px; 
+    height: 45px;
+    margin-top: 0.1rem; 
+    border-radius: 7px;
+    border: none;
+    margin-left: 10px;
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(240, 2%, 61%);
+  }
+  
+  form input {
+    flex-grow: 1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background: hsl(235, 24%, 19%);
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+  }
+  
+  input::placeholder {
+    color: hsl(0, 1%, 48%);;
+    letter-spacing: 2px;
+  }
+  
+  .list {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .list div {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid white;
+    background-color: hsl(235, 24%, 19%);
+  }
+  
+  .list div li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 7px;
+  }
+  
+  .todo-button {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    margin-left: 5px;
+    font-size: 1rem;
+    color: rgb(0, 110, 255);
+    background-color: hsl(235, 24%, 19%);;
+  }
+  #button:hover{
+    background-color: rgb(211, 84, 0);
+    color: rgb(255, 255, 255);
+    
+  }
+  #button:active {
+    background-color: rgb(7, 180, 21);
+  }
+  
+  .info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    color: hsl(234, 11%, 52%);
+    padding: 1rem 0.9rem;
+    background: hsl(235, 24%, 19%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .choice {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .choice button {
+    padding: 4.5px;
+    background: hsl(235, 24%, 19%);
+    color: hsl(234, 11%, 52%);
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .info button {
+    padding: 4.5px;
+    background: hsl(235, 24%, 19%);
+    color: hsl(234, 11%, 52%);
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .info button:hover {
+    color: hsl(220, 98%, 61%);
+  }
+  
+  .active {
+    color: hsl(220, 98%, 61%);
+  }
+  
+  .active-check {
+    background: linear-gradient(hsl(192, 81%, 84%), hsl(280, 87%, 65%));
+  }
+  
+  .active-check img {
+    transform: scale(1) !important;
+  }
+  
+  .todo-check {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+  .light-mode {
+    background-color: rgb(250, 250, 250);
+    color:  hsl(237, 14%, 26%);
+  }
+
+  .light-mode .form-input{
+        background-color: white;
+        color: black;
+  }
+  .light-mode .task{
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.light-mode .info{
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  box-shadow: 10px 5px 25px 10px rgba(31, 30, 30, 0.2);
+}
+.light-mode .choice button{
+  background-color: white;
+  color: black;
+}
+.light-mode .info button{
+  background-color: white;
+  color: black;
+}
+
+.light-mode .info button:hover {
+  color:hsl(220, 98%, 61%);}
+  
+  .light-mode .form-input::placeholder{
+    color: hsl(235, 21%, 11%);
+  }
+  .light-mode .todo-button{
+    background-color:  hsl(0, 100%, 99%);
+  }
+  .light-mode h1{
+    color: white;
+  }
+  .light-mode .add-button{
+    background-color: white;
+    color:  hsl(235, 21%, 11%);
+    
+  }
+  .toggle-button{
+    width: 50px;
+    background-image: url("/images/icon-sun.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-style: hidden;
+    background-color: rgba(164, 7, 255, 0);
+    
+  }
+  .light-mode .toggle-button {
+    background: url(images/icon-moon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+  }
+
+  
+  
